@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midias em HTML5</title>
+  </head>
+  <body>
+    <h1>Imagens dinamicas</h1>
+    <p>
+      Tente abrir o site m várias midias diferentes, ou mude o tamanho da aba do
+      seu navegador.
+    </p>
+    <picture>
+      <source
+        media="(max-width: 750px)"
+        srcset="imagens/pequeno.jpg"
+        type="image/jpeg"
+      />
+      <source
+        media="(max-width: 1050px)"
+        srcset="imagens/medio.jpg"
+        type="image/jpeg"
+      />
+      <img src="imagens/grande.jpg" alt="Imagem flexivel grande" />
+    </picture>
+    <h1>Vamos colocar áudio</h1>
+    <p>Abaixo eu vou colocar áudio de duas maneiras</p>
+    <ul>
+      <li>
+        <h2>Enygma</h2>
+        <audio src="midia/enygma.mp3" controls preload="metadata">
+          <p>
+            Não foi possivel carreguar o áudio,
+            <a
+              href="midia/enygma.mp3"
+              download="enygma.mp3"
+              type="audio/mpeg"
+            >baixar áudio</a>
+          </p>
+        </audio>
+      </li>
+      <li>
+        <h2>Luz</h2>
+        <audio preload="metadata" controls loop>
+          <source src="midia/luz.mp3" type="audio/mpeg" />
+          <source src="midia/enygma.ogg" type="audio/ogg" />
+          <p>
+            Opss... Não foi possivel carreguar o áudio
+            <a href="midia/luz.mp3" download="luz.mp3" type="audio/mpeg"
+              >baixar áudio</a
+            >
+          </p>
+        </audio>
+      </li>
+    </ul>
+  </body>
+</html>

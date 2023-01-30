@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elemento</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+           id            = #
+           classe        = .
+           pseudo-classe = :
+           pseudo-elemento = ::
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(9, 10, 10);
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:hover{
+            color: rgb(49, 138, 205);
+            text-decoration: underline; 
+        }
+        h1{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(30, 30, 30);
+            color: white;
+        }
+        a:hover::after{
+            content: ' ⇐';
+        }
+        a:hover::before{
+            content: '⇒ ';
+        }
+
+        p::first-letter{
+            font-size: 2em;
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minhas músicas</h1>
+    <p>Essas são algumas das minhas músicas clássicas favoritas!</p>
+    <h2>Músicas favoritas:</h2>
+    <ul>
+        <li class="melhorzin"><a href="https://www.youtube.com/watch?v=g7C2it9cCsY&ab_channel=Rousseau" target="_blank" type="external">Frederic Chopin Etude no 25 op 5 (Wrong note)</a></li>
+        <li><a href="https://www.youtube.com/watch?v=H1Dvg2MxQn8&ab_channel=Rousseau" target="_blank" type="external">Franz Listz and Niccolò Paganini La Campanella</a></li>
+        <li><a href="https://www.youtube.com/watch?v=sbTVZMJ9Z2I&ab_channel=Rousseau" target="_blank" type="external">Ludwig Van Bethoven Moonlight Sonata (1st movement)</a></li>
+    </ul>
+</body>
+</html>

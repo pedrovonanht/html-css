@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando picture</title>
+</head>
+<body>
+    <h1>Testando a tag picture</h1>
+    <p>Hoje vamos testar a tag picture para carreguar imagens com ou sem borda, mude o tamanho da janela para ver.</p>
+    <picture>
+        <source media="(max-width: 512px)" srcset="imagens/512x650.jpg" type="image/jpg">
+        <source media="(max-width: 862px)" srcset="imagens/862x650.jpg" type="image/jpg">
+        <img src="imagens/1156x650.jpg" alt="imagem grande">
+    </picture>
+</body>
+</html>

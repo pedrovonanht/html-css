@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: rgb(43, 43, 43);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            margin:0px 10px;
+        }
+        nav{
+            background-color: rgb(200, 200, 200);
+            box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.389);
+            border-radius: 5px;
+        }
+        nav > a{
+            margin-right: 30px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav > a:hover{
+            color: rgb(128, 180, 245);
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding-bottom: 5px;
+            margin: 0px 10px 10px;
+            border-radius: 15px 0;
+        }
+        section{
+            background-color: white;
+            margin:10px
+        }
+        section#tema{
+            background-color: white;
+            padding-top:0px;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        section#tema > p{
+            margin-bottom: 8px;
+            border-radius: 21px;
+            margin-left: 10px;
+            padding-top: 10px;
+        }
+        section.noticias > article{
+            padding: 10px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            background-color: lightgray;
+            border-radius: 5px;
+        }
+        aside{
+            background-color: rgb(147, 147, 147);
+        }
+        footer{
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 5px;
+        }
+        div#bola{
+            margin: 30px;
+            background-color: rgb(255, 255, 255);
+            width: 300px;
+            height: 300px;
+            border-radius: 50%    ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Site de Notícias</h1>
+    <nav>
+        <a href="#">link01</a>
+        <a href="#">link02</a>
+        <a href="#">link03</a>
+        <a href="#">link04</a>
+    </nav>
+    </header>
+    <main>
+        <section id="tema">
+            <p>Tecnologias e gadgets</p>
+        </section>
+        <section class="noticias">
+            <article>
+                <h2>Notícia 01</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laboriosam dolore architecto impedit ipsum quasi magnam similique delectus laudantium commodi, obcaecati quis voluptas autem asperiores? Ex architecto excepturi voluptas fugiat.</p>
+            </article>
+            <article>
+                <h2>Notícia 02</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni fuga, placeat consequuntur doloribus est illo laborum esse optio, tempora expedita in quia, delectus voluptates deserunt ipsa! Sapiente tenetur quam molestias.
+                    <aside>
+                        <p><quote>artigo por Pedro Quadros</quote></p>
+                    </aside>
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por Pedro Quadros</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>
