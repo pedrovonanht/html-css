@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        caption{
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 30px 0px;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -22,7 +27,8 @@
         table{
             border-collapse: collapse;
             margin: auto;
-            width: 50vw;
+            width: 800px;
+            position: relative;
         }
         td.num{
             text-align: right;
@@ -31,19 +37,24 @@
             text-align: center;
         }
         tfoot{
-            background-color: grey;
+            background-color: rgb(48, 48, 48);
+            color: white;
         }
-        td#footer{
-            width:50%;
+        thead{
+            background-color: rgb(48, 48, 48);
+            color: white;
+            position: sticky;
+            top: -1px;
         }
-        #teste{
-            border-right: none;
+        tbody > tr:nth-child(even){
+            background-color: rgb(179, 179, 179);
         }
-        </style>
+    </style>
 </head>
 <body>
     <!-- Estrutura de tabela 
         Table
+        Caption    
             thead
              tr
                     th
@@ -53,13 +64,15 @@
             tfoot
                 tr
                     td-->
+        
     <table>
+        <caption>Tabela finissíma</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Sigla</th>
-                <th>Capital</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Sigla</th>
+                <th scope="col">Capital</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -93,17 +106,189 @@
                 <td>Florianópolis</td>
                 <td class="num">6 734 568	</td>
             </tr>
-            <td>São Paulo</td>
-            <td class="sigla">Sp</td>
-            <td>São Paulo</td>
-            <td class="num">248 209</td>
+            <tr>
+                <td>São Paulo</td>
+                <td class="sigla">Sp</td>
+                <td>São Paulo</td>
+                <td class="num">248 209</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="sigla">Ac</td>
+                <td>Rio branco</td>
+                <td class="num">795 145</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="sigla">Ba</td>
+                <td>Salvador</td>
+                <td class="num">15 150 143</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="sigla">Mg</td>
+                <td>Belo Horizonte</td>
+                <td class="num">586 528</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="sigla">Rs</td>
+                <td>Porto Alegre</td>
+                <td class="num">281 748</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="sigla">Sc</td>
+                <td>Florianópolis</td>
+                <td class="num">6 734 568	</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="sigla">Sp</td>
+                <td>São Paulo</td>
+                <td class="num">248 209</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="sigla">Ac</td>
+                <td>Rio branco</td>
+                <td class="num">795 145</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="sigla">Ba</td>
+                <td>Salvador</td>
+                <td class="num">15 150 143</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="sigla">Mg</td>
+                <td>Belo Horizonte</td>
+                <td class="num">586 528</td>
+            </tr>
+            <tr>
+                <td>Par&aacute;</td>
+                <td>PA</td>
+                <td>Bel&eacute;m</td>
+                <td class="num">248 209</td>
+            </tr>
+            <tr>
+                <td>Para&iacute;ba</td>
+                <td>PB</td>
+                <td>Jo&atilde;o Pessoa</td>
+                <td class="num">248 209</td>
+                
+            </tr>
+            <tr>
+                <td>Paran&aacute;</td>
+                <td>PR</td>
+                <td>Curitiba</td>
+                <td class="num">248 209</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>PE</td>
+                <td>Recife</td>
+                <td class="num">248 209</td>
+            </tr>
+            <tr>
+                <td>Piau&iacute;</td>
+                <td>PI</td>
+                <td>Teresina</td>
+                <td class="num">248 209</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>RJ</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">248 209</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>RN</td>
+                <td>Natal</td>
+                <td class="num">248 209</td>
+            </tr>
+            
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="sigla">Rs</td>
+                <td>Porto Alegre</td>
+                <td class="num">281 748</td>
+            </tr>
+            <tr>
+                <td>Rond&ocirc;nia</td>
+                <td>RO</td>
+                <td>Porto Velho</td>
+                <td class="num">248 209</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>RR</td>
+                <td>Boa Vista</td>
+                <td class="num">6 734 568	</td>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="sigla">Sc</td>
+                <td>Florianópolis</td>
+                <td class="num">6 734 568	</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="sigla">Sp</td>
+                <td>São Paulo</td>
+                <td class="num">248 209</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>SE</td>
+                <td>Aracaju</td>
+                <td class="num">6 734 568	</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>TO</td>
+                <td>Palmas</td>
+                <td class="num">6 734 568	</td>
+            </tr>   
         </tbody>
         <tfoot>
             <tr>
-                <th class="footer-table" colspan="3" id="rodape-header" id="teste">População total:</th>
-                <td class="num footer-table">23.796.341</td>
+                <th colspan="3" style="border-right: none; text-align: right;" scope="row">População total:</th>
+                <td class="num" style="border-left: none; border-right: 1px solid black;" colspan="1">23.796.341</td>
             </tr>
         </tfoot>
     </table>
+    <h2>Texto finissímo senhores</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut debitis delectus explicabo laudantium! Corporis laudantium iste modi illo culpa error in! Pariatur eum iusto culpa, unde nesciunt consequuntur. Ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eligendi excepturi magnam, fugit recusandae molestias quas harum nobis accusamus, minus quae voluptates perspiciatis suscipit veritatis ex placeat ullam a distinctio!Loremlore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum in commodi facilis, asperiores harum porro consequuntur blanditiis tenetur id voluptatem explicabo ad libero illo nemo possimus saepe quasi nulla iure.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, atque autem. Eligendi itaque sunt unde, ipsam est rerum, adipisci voluptatum illo aliquam fugit consequuntur delectus tenetur soluta ea quisquam voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore adipisci asperiores accusantium repellendus, numquam quisquam consectetur repudiandae, sint possimus laborum laboriosam ipsa illum culpa eius, totam cumque minus inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, porro, ab maiores unde aspernatur corrupti rem ullam vitae ratione distinctio ipsam voluptate error alias facilis nam harum dolorem minus accusamus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione veritatis quae laboriosam sapiente eveniet! Laudantium officiis facere excepturi molestiae, ab dolor magni debitis fugiat ipsa voluptate enim, dolores repudiandae expedita!
+    </p>
+    <h2>Texto finissímo senhores</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut debitis delectus explicabo laudantium! Corporis laudantium iste modi illo culpa error in! Pariatur eum iusto culpa, unde nesciunt consequuntur. Ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eligendi excepturi magnam, fugit recusandae molestias quas harum nobis accusamus, minus quae voluptates perspiciatis suscipit veritatis ex placeat ullam a distinctio!Loremlore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum in commodi facilis, asperiores harum porro consequuntur blanditiis tenetur id voluptatem explicabo ad libero illo nemo possimus saepe quasi nulla iure.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, atque autem. Eligendi itaque sunt unde, ipsam est rerum, adipisci voluptatum illo aliquam fugit consequuntur delectus tenetur soluta ea quisquam voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore adipisci asperiores accusantium repellendus, numquam quisquam consectetur repudiandae, sint possimus laborum laboriosam ipsa illum culpa eius, totam cumque minus inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, porro, ab maiores unde aspernatur corrupti rem ullam vitae ratione distinctio ipsam voluptate error alias facilis nam harum dolorem minus accusamus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione veritatis quae laboriosam sapiente eveniet! Laudantium officiis facere excepturi molestiae, ab dolor magni debitis fugiat ipsa voluptate enim, dolores repudiandae expedita!
+    </p>
+    <h2>Texto finissímo senhores</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut debitis delectus explicabo laudantium! Corporis laudantium iste modi illo culpa error in! Pariatur eum iusto culpa, unde nesciunt consequuntur. Ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eligendi excepturi magnam, fugit recusandae molestias quas harum nobis accusamus, minus quae voluptates perspiciatis suscipit veritatis ex placeat ullam a distinctio!Loremlore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum in commodi facilis, asperiores harum porro consequuntur blanditiis tenetur id voluptatem explicabo ad libero illo nemo possimus saepe quasi nulla iure.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, atque autem. Eligendi itaque sunt unde, ipsam est rerum, adipisci voluptatum illo aliquam fugit consequuntur delectus tenetur soluta ea quisquam voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore adipisci asperiores accusantium repellendus, numquam quisquam consectetur repudiandae, sint possimus laborum laboriosam ipsa illum culpa eius, totam cumque minus inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, porro, ab maiores unde aspernatur corrupti rem ullam vitae ratione distinctio ipsam voluptate error alias facilis nam harum dolorem minus accusamus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione veritatis quae laboriosam sapiente eveniet! Laudantium officiis facere excepturi molestiae, ab dolor magni debitis fugiat ipsa voluptate enim, dolores repudiandae expedita!
+    </p>
+    <h2>Texto finissímo senhores</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut debitis delectus explicabo laudantium! Corporis laudantium iste modi illo culpa error in! Pariatur eum iusto culpa, unde nesciunt consequuntur. Ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eligendi excepturi magnam, fugit recusandae molestias quas harum nobis accusamus, minus quae voluptates perspiciatis suscipit veritatis ex placeat ullam a distinctio!Loremlore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum in commodi facilis, asperiores harum porro consequuntur blanditiis tenetur id voluptatem explicabo ad libero illo nemo possimus saepe quasi nulla iure.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, atque autem. Eligendi itaque sunt unde, ipsam est rerum, adipisci voluptatum illo aliquam fugit consequuntur delectus tenetur soluta ea quisquam voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore adipisci asperiores accusantium repellendus, numquam quisquam consectetur repudiandae, sint possimus laborum laboriosam ipsa illum culpa eius, totam cumque minus inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, porro, ab maiores unde aspernatur corrupti rem ullam vitae ratione distinctio ipsam voluptate error alias facilis nam harum dolorem minus accusamus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione veritatis quae laboriosam sapiente eveniet! Laudantium officiis facere excepturi molestiae, ab dolor magni debitis fugiat ipsa voluptate enim, dolores repudiandae expedita!
+    </p>
+    <h2>Texto finissímo senhores</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut debitis delectus explicabo laudantium! Corporis laudantium iste modi illo culpa error in! Pariatur eum iusto culpa, unde nesciunt consequuntur. Ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eligendi excepturi magnam, fugit recusandae molestias quas harum nobis accusamus, minus quae voluptates perspiciatis suscipit veritatis ex placeat ullam a distinctio!Loremlore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum in commodi facilis, asperiores harum porro consequuntur blanditiis tenetur id voluptatem explicabo ad libero illo nemo possimus saepe quasi nulla iure.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, atque autem. Eligendi itaque sunt unde, ipsam est rerum, adipisci voluptatum illo aliquam fugit consequuntur delectus tenetur soluta ea quisquam voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore adipisci asperiores accusantium repellendus, numquam quisquam consectetur repudiandae, sint possimus laborum laboriosam ipsa illum culpa eius, totam cumque minus inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, porro, ab maiores unde aspernatur corrupti rem ullam vitae ratione distinctio ipsam voluptate error alias facilis nam harum dolorem minus accusamus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione veritatis quae laboriosam sapiente eveniet! Laudantium officiis facere excepturi molestiae, ab dolor magni debitis fugiat ipsa voluptate enim, dolores repudiandae expedita!
+    </p>
+    <h2>Texto finissímo senhores</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut debitis delectus explicabo laudantium! Corporis laudantium iste modi illo culpa error in! Pariatur eum iusto culpa, unde nesciunt consequuntur. Ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eligendi excepturi magnam, fugit recusandae molestias quas harum nobis accusamus, minus quae voluptates perspiciatis suscipit veritatis ex placeat ullam a distinctio!Loremlore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum in commodi facilis, asperiores harum porro consequuntur blanditiis tenetur id voluptatem explicabo ad libero illo nemo possimus saepe quasi nulla iure.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, atque autem. Eligendi itaque sunt unde, ipsam est rerum, adipisci voluptatum illo aliquam fugit consequuntur delectus tenetur soluta ea quisquam voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore adipisci asperiores accusantium repellendus, numquam quisquam consectetur repudiandae, sint possimus laborum laboriosam ipsa illum culpa eius, totam cumque minus inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, porro, ab maiores unde aspernatur corrupti rem ullam vitae ratione distinctio ipsam voluptate error alias facilis nam harum dolorem minus accusamus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione veritatis quae laboriosam sapiente eveniet! Laudantium officiis facere excepturi molestiae, ab dolor magni debitis fugiat ipsa voluptate enim, dolores repudiandae expedita!
+    </p>
 </body>
 </html>
